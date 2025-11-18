@@ -1,25 +1,17 @@
-Prochaines étapes
+# Customer ML & RAG API
 
-On va démarrer très proprement et étape par étape.
+API FastAPI déployable sur Render qui expose :
 
-📌 Étape 1 — Créer l'infrastructure Render
+- `/health` : health check
+- `/ml/predict` : mini modèle ML de démo
+- `/rag/query` : endpoint RAG basé sur LangChain (placeholder pour l'instant)
 
-Je te guide :
+## Démarrage local
 
-Créer un compte Render
+```bash
+conda create -n customer_api python=3.10 -y
+conda activate customer_api
 
-Créer une base PostgreSQL
+pip install -r requirements.txt
 
-Récupérer l’URL de connexion
-
-Créer un service Web vide (FastAPI)
-
-Connecter GitHub
-
-Ensuite on passera à :
-
-📌 Étape 2 — Création du projet FastAPI structuré
-📌 Étape 3 — Connexion PostgreSQL
-📌 Étape 4 — Modèle ML
-📌 Étape 5 — LangChain + RAG
-📌 Étape 6 — Déploiement final# customer-ml-api
+uvicorn app.main:app --reload

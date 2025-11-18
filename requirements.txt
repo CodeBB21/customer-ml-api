@@ -1,2 +1,16 @@
 fastapi
 uvicorn
+pydantic
+sqlalchemy
+psycopg2-binary
+pandas
+numpy
+scikit-learn
+
+python-dotenv
+
+# LangChain & OpenAI (pour le RAG simple)
+langchain
+langchain-core
+langchain-openai
+openai
