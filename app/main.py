@@ -17,3 +17,8 @@ def read_root():
 app.include_router(health.router)
 app.include_router(ml.router)
 app.include_router(rag.router)
+
+from .routers import customers, transactions
+
+app.include_router(customers.router)
+app.include_router(transactions.router)
