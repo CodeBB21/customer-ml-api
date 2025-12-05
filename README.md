@@ -1,7 +1,3 @@
-Prochaines étapes
-
-On va démarrer très proprement et étape par étape.
-
 📌 Étape 1 — Créer l'infrastructure Render
 
 Je te guide :
